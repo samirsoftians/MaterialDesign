@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+
+    android:orientation="vertical"
+    android:weightSum="1">
+
+   <!--<LinearLayout
+
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+
+
+       <TextView
+           android:layout_marginTop="1dp"
+           android:layout_marginLeft="2dp"
+           android:background="@color/colorAccent"
+           android:gravity="center"
+           android:hint="Date"
+           android:layout_weight="1"
+           android:layout_width="match_parent"
+           android:layout_height="40dp" />
+
+
+
+
+       <TextView
+           android:layout_marginRight="2dp"
+           android:layout_marginTop="1dp"
+           android:background="@color/colorAccent"
+           android:layout_marginLeft="2dp"
+           android:gravity="center"
+           android:layout_weight="1"
+           android:hint="Time"
+           android:layout_width="match_parent"
+           android:layout_height="40dp" />
+   </LinearLayout>
+-->
+
+
+
+
+    <!--<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:hint="Select Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <View
+
+            android:layout_marginTop="5sp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:background="#808080"/>
+
+
+
+        <TextView
+            android:hint="Select Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>-->
+    <HorizontalScrollView
+        android:id="@+id/horizontalScroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:scrollbars="horizontal">
+
+
+    <LinearLayout
+        android:layout_marginTop="-40dp"
+        android:layout_marginBottom="-40dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+<DatePicker
+    android:id="@+id/date1"
+    android:scaleX="0.70"
+    android:scaleY="0.70"
+    android:layout_marginLeft="-42dp"
+    android:layout_marginTop="-40dp"
+    android:layout_marginRight="-55dp"
+    android:layout_marginBottom="-20dp"
+    android:layout_gravity="center_horizontal"
+
+    android:fitsSystemWindows="true"
+
+    android:calendarViewShown="false"
+    android:datePickerMode="spinner"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+</DatePicker>
+        android:textAlignment="center"
+        <!--<View
+
+            android:layout_marginTop="5sp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true"
+            android:background="#808080"/>-->
+        <!--<View
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:rotation="90"
+            android:background="@android:color/darker_gray"/>-->
+
+
+        <View
+            android:layout_marginLeft="10dp"
+            android:scaleX="0.70"
+            android:scaleY="0.70"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#bdc1c1" />
+
+    <TimePicker
+        android:id="@+id/time1"
+        android:scaleX="0.70"
+        android:scaleY="0.70"
+        android:layout_marginLeft="-45dp"
+        android:fitsSystemWindows="true"
+        android:layout_marginRight="-50dp"
+        android:timePickerMode="spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TimePicker>
+
+
+
+    </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>
